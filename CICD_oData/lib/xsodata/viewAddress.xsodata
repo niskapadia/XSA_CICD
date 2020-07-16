@@ -1,0 +1,5 @@
+service {
+	"XSA_CICD.CICD_DB::TEST_CICD.AddressView" as "Address"
+	keys ("id");
+
+}

@@ -1,3 +1,24 @@
 ID: XSA_CICD
 _schema-version: '2.1'
 version: 0.0.1
+modules:
+  - name: CICD_DB
+    type: hdb
+    path: CICD_DB
+    requires:
+      - name: hdi_CICD_DB
+  - name: CICD_oData
+    type: nodejs
+    path: CICD_oData
+    provides:
+      - name: CICD_oData_api
+        properties:
+          url: '${default-url}'
+    requires:
+      - name: hdi_CICD_DB
+      - name: CICD_DB
+resources:
+  - name: hdi_CICD_DB
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container

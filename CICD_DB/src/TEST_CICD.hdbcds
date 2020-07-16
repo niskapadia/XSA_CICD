@@ -1,0 +1,29 @@
+namespace XSA_CICD.CICD_DB;
+
+context TEST_CICD {
+type StreetAddress {
+        name : String(80);
+        number : Integer;
+    };
+    type CountryAddress {
+        name : String(80);
+        code : String(3);
+    };
+    entity Address {
+        key id : Integer;
+        street : StreetAddress;
+        zipCode : Integer;
+        city : String(80);
+        country : CountryAddress;
+        type : String(10); // home, office
+    } technical configuration {
+        column store;
+    };
+    view AddressView as select from Address
+    {
+        id,
+        street.name,
+        street.number
+    };
+    
+};
