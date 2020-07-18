@@ -1,0 +1,18 @@
+namespace XSA_CICD.CICD_DB;
+
+context HANAOBJECTS {
+
+
+entity Header {
+    Document_Nbr  : String(10);
+    Amount        : Integer;
+    association_1 : association[1, 1..1] to Item { Document_Nbr };
+};
+
+/*@@layout{"layoutInfo":{"x":113,"y":-43}}*/
+entity Item {
+    Document_Nbr : String(10);
+    Qty          : Integer;
+};
+};
+
