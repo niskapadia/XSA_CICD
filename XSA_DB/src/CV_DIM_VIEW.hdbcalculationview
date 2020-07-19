@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="XSA_CICD.CICD_DB::CV_DIM_VIEW" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="XSA_CICD.XSA_DB::CV_DIM_VIEW" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="CV_DIM_VIEW"/>
 <localVariables/>
 <variableMappings/>
 <dataSources>
-  <DataSource id="XSA_CICD.CICD_DB::HANAOBJECTS.Header">
-    <resourceUri>XSA_CICD.CICD_DB::HANAOBJECTS.Header</resourceUri>
+  <DataSource id="XSA_CICD.XSA_DB::HANAOBJECTS.Header">
+    <resourceUri>XSA_CICD.XSA_DB::HANAOBJECTS.Header</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews/>
-<logicalModel id="XSA_CICD.CICD_DB::HANAOBJECTS.Header">
+<logicalModel id="XSA_CICD.XSA_DB::HANAOBJECTS.Header">
   <attributes>
     <attribute id="Document_Nbr" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Document_Nbr"/>

@@ -1,4 +1,4 @@
-namespace XSA_CICD.CICD_DB;
+namespace XSA_CICD.XSA_DB;
 
 context HANAOBJECTS {
 
